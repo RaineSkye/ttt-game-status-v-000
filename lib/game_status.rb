@@ -50,10 +50,11 @@ def winner(board)
 !won?(board)
     return nil
 
-WIN_COMBINATIONS.each do |combo|
-    if combo.include?("X")
+|| WIN_COMBINATIONS.each do |combo|
+   combo.include?("X")
     return "X"
- elsif combo.include?("O")
+ || WIN_COMBINATIONS.each do |combo|
+ combo.include?("O")
     return "O"
 
 end
