@@ -52,8 +52,8 @@ if !won?(board)
 elsif WIN_COMBINATIONS.each do |combo|
     combo.include?("X")
     return "X"
- else WIN_COMBINATIONS.each do |combo|
-    combo.include?("O")
-    return "O"
+ #else WIN_COMBINATIONS.each do |combo|
+    #combo.include?("O")
+    #return "O"
 end
 end
