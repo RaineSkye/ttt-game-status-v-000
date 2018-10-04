@@ -57,3 +57,4 @@ elsif WIN_COMBINATIONS.each do |combo|
     return "O"
   end
 end
+end
