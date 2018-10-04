@@ -49,10 +49,10 @@ end
 def winner(board)
   #if !won?(board)
     #return nil
-if WIN_COMBINATIONS.each do |combo|
+WIN_COMBINATIONS.each do |combo|
     combo.include?("X")
     return "X"
-elsif WIN_COMBINATIONS.each do |combo|
+ WIN_COMBINATIONS.each do |combo|
     combo.include?("O")
     return "O"
   end
