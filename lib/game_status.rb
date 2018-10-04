@@ -45,7 +45,7 @@ def over?(board)
 end
 
 
-#winner
+#winner another way of writing but can't figure out syntax...
 #def winner(board)
   #!won?(board)
     #return nil
@@ -60,16 +60,17 @@ end
 #end
 #end
 
-def winner (board)
-  index = []
-  index = won?(board)
-  if index == false
+def winner(board)
+  combo = []
+  combo = won?(board)
+  if combo == false
     return nil
-  else
-    if board[index[0]] == "X"
+  elsif board[combo[0]] == "X"
       return "X"
     else
       return "O"
     end
   end
 end
+
+
