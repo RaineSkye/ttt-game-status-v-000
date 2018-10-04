@@ -48,8 +48,8 @@ end
 #winner
 def winner(board)
   if !won?(board)
-    nil
-WIN_COMBINATIONS.select{|i| i.is_a?("X")}
-puts "X"
+    return nil
+elsif won?(board).include?("X")
+  return "X"
   end
 end
