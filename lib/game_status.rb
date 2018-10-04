@@ -61,4 +61,3 @@ when WIN_COMBINATIONS.each do |combo|
 end
 end
 end
-
