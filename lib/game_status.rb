@@ -47,14 +47,13 @@ end
 
 #winner
 def winner(board)
-  #if !won?(board)
-    #return nil
-WIN_COMBINATIONS.each do |combo|
+when !won?(board)
+    puts nil
+when WIN_COMBINATIONS.each do |combo|
     combo.include?("X")
-    return "X"
- WIN_COMBINATIONS.each do |combo|
+    puts "X"
+ when WIN_COMBINATIONS.each do |combo|
     combo.include?("O")
-    return "O"
+   puts "O"
   end
-end
 end
