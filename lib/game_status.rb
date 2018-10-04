@@ -29,11 +29,11 @@ end
 #full?
 def full?(board)
   board.all?{|p| p != " "}
-  return true
-else
-  false
-end
+    return true
+  else
+    false
   end
+end
 
 #draw?
 def draw?(board)
