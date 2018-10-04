@@ -55,7 +55,7 @@ WIN_COMBINATIONS.each do |combo|
     return "X"
  elsif combo.include?("O")
     return "O"
-  
+
 end
 end
 end
