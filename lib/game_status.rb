@@ -46,18 +46,30 @@ end
 
 
 #winner
-def winner(board)
-  case
-when !won?(board)
+#def winner(board)
+  #!won?(board)
+    #return nil
+# WIN_COMBINATIONS.each do |combo|
+   #combo.include?("X")
+    #return "X"
+# WIN_COMBINATIONS.each do |combo|
+ #combo.include?("O")
+    #return "O"
+
+#end
+#end
+#end
+
+def winner (board)
+  index = []
+  index = won?(board)
+  if index == false
     return nil
-
-when WIN_COMBINATIONS.each do |combo|
-   combo.include?("X")
-    return "X"
-when WIN_COMBINATIONS.each do |combo|
- combo.include?("O")
-    return "O"
-
-end
-end
+  else
+    if board[index[0]] == "X"
+      return "X"
+    else
+      return "O"
+    end
+  end
 end
