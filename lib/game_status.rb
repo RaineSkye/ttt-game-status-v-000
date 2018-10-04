@@ -56,4 +56,3 @@ elsif WIN_COMBINATIONS.each do |combo|
     combo.include?("O")
     "O"
 end
-end
