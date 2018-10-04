@@ -49,7 +49,8 @@ end
 def winner(board)
   if !won?(board)
     return nil
-  WIN_COMBINATIONS.each {|combo| combo.include?"X")
+  WIN_COMBINATIONS.each do |combo|
+    combo.include?("X")
     return "X"
   end
 end
