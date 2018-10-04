@@ -49,7 +49,7 @@ end
 def winner(board)
   if !won?(board)
     return nil
-WIN_COMBINATIONS.detect{|i| i.is_a("X")}
+WIN_COMBINATIONS.find{|i| i.is_a("X")}
 return "X"
   end
 end
