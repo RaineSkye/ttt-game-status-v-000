@@ -61,11 +61,11 @@ end
 #end
 
 def winner(board)
-  combo = []
-  combo = won?(board)
-  if combo == false
+  index = []
+  index = won?(board)
+  if index == false
     return nil
-  elsif board[combo[0]] == "X"
+  elsif board[index[0]] == "X"
       return "X"
     else
       return "O"
