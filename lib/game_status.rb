@@ -55,5 +55,4 @@ when WIN_COMBINATIONS.each do |combo|
  when WIN_COMBINATIONS.each do |combo|
     combo.include?("O")
    return "O"
-  end
 end
