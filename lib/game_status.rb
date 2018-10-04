@@ -59,3 +59,5 @@ WIN_COMBINATIONS.each do |combo|
     nil
 end
 end
+end
+
